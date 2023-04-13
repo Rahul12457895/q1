@@ -1,0 +1,9 @@
+def Convert(string):
+    li = list(string.split(" "))
+    return li
+str1 = input("enter a string: ")
+
+a=Convert(str1)
+print("string converted to list: ",a)
+a.sort(key=lambda x:x[-2])
+print("after sorted a list: ",a)
